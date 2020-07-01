@@ -2,7 +2,8 @@ import sys
 
 import numpy as np
 
-filename = sys.argv[1]
+#filename = sys.argv[1]
+filename = "data_singlevar.txt"
 X = []
 y = []
 with open(filename, 'r') as f:
