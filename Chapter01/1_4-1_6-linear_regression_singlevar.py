@@ -2,7 +2,8 @@ import sys
 
 import numpy as np
 
-filename = sys.argv[1]
+#filename = sys.argv[1]
+filename = "data_singlevar.txt"
 X = []
 y = []
 with open(filename, 'r') as f:
@@ -59,7 +60,7 @@ print ("R2 score =", round(sm.r2_score(y_test, y_test_pred), 2) )
 # Model persistence
 import pickle #use pickle in python3 instead of cPickle in python2
 
-output_model_file = '3_model_linear_regr.pkl'
+output_model_file = '1_6_model_linear_regr.pkl'
 
 with open(output_model_file, 'wb') as f: # need to be wb mode to write the byte mode instead of string mode
     pickle.dump(linear_regressor, f)
